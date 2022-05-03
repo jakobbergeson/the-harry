@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Header from '@/components/Header'
 
 import styles from '@/pages/index.module.css'
 
@@ -7,16 +8,17 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>The Harry</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
+        <Header />
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
-        <p className={styles.description}>
+        <p className={styles.description} data-testid='description'>
           Get started by editing <code>pages/index.js</code>
         </p>
 

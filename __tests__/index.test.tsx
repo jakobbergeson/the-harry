@@ -9,6 +9,9 @@ describe('Home', () => {
       name: /welcome to next\.js!/i,
     })
 
+    const description = screen.getByTestId('description')
+
     expect(heading).toBeInTheDocument()
+    expect(description).toHaveTextContent('Get started by editing')
   })
 })
