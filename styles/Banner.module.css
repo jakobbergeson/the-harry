@@ -1,0 +1,18 @@
+.promoBar {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-family: 'Merriweather', serif;
+  letter-spacing: 2px;
+  height: 3rem;
+  line-height: 1rem;
+  background-color: var(--colors-secondary);
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 13;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  width: 100%;
+}

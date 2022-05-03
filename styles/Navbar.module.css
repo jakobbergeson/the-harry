@@ -1,0 +1,115 @@
+.navContainer {
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.55),transparent);
+  background-color: transparent;
+  color: var(--colors-primary);
+  position: fixed;
+  top: 0;
+  margin-top: 3rem;
+  padding: 0 10vw;
+  z-index: 10;
+  font-size: 16px;
+  transition: background-color .5s ease,background-image .5s ease;
+}
+
+.navContainerBg {
+  width: 100%;
+  background-color: rgba(255,255,255,.95);
+  background-image: none;
+  border-bottom: 1px solid var(--colors-text);
+  color: var(--colors-text);
+  position: fixed;
+  top: 0;
+  margin-top: 3rem;
+  padding: 0 10vw;
+  z-index: 12;
+  font-size: 16px;
+  transition: background-color .5s ease,background-image .5s ease;
+}
+
+.navWrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 80rem;
+}
+
+.navSeperator {
+  padding-top: 1rem;
+  position: relative;
+}
+
+.navSeperator hr{
+  border: 0;
+  border-top: 1px solid var(--colors-text);
+  height: 1px;
+  margin: 0;
+}
+
+.navSeperator::before {
+  background-position: center left;
+  background-image: url('../public/diamond-l.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 1.2rem;
+  padding-top: 1rem;
+}
+
+.navSeperator::after {
+  background-position: center right;
+  background-image: url('../public/diamond-r.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.2rem;
+  padding-top: 1rem;
+}
+
+.logo {
+  filter: invert(1);
+}
+
+.logo a{
+ padding-left: 0;
+}
+
+.logoBg {
+  filter: invert(0);
+}
+
+.logoBg a{
+  padding-left: 0;
+ }
+
+.uNav {
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.uNav li a {
+  display: block;
+  text-transform: uppercase;
+  transition: color .25s ease;
+  padding: 1rem 1.5rem;
+}
+
+.uNav li a:hover {
+  color:#937338;
+  transition: color .25s ease;
+}
