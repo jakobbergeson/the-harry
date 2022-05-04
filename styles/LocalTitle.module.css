@@ -1,0 +1,40 @@
+.wrapper {
+  padding: 1.5rem 2.5%;
+}
+
+.container {
+  max-width: 80rem;
+  padding: 0 1.5rem;
+}
+
+.mainTitle {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.mainTitle::before {
+  background-image: url('../public/title-ornament-l.svg');
+  margin-right: 1.25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  display: block;
+  height: 3.5rem;
+  width: 4.5rem;
+  flex-shrink: 0;
+}
+
+.mainTitle::after {
+  background-image: url('../public/title-ornament-r.svg');
+  margin-left: 1.25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  display: block;
+  height: 3.5rem;
+  width: 4.5rem;
+  flex-shrink: 0;
+}
