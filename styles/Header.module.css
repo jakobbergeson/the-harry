@@ -3,7 +3,7 @@
   z-index: 5;
   background-image: url('https://images.unsplash.com/photo-1534470397273-a1c104354754?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2062&q=80');
   background-color: #425765;
-  background-position-x: 50% 60%;
+  background-position: 50% 60%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 97vh;
