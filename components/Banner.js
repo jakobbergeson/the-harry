@@ -4,7 +4,7 @@ export default function Banner() {
   return (
     <a href='/' className={style.promoBar}>
       <ul>
-        <li>Join our Ebites Club! Receive $10 off $20 your first online order</li>
+        <li>Join our club! Receive 25% off your first online order</li>
       </ul>
     </a>
   );

@@ -69,8 +69,10 @@ h2 {
   text-transform: uppercase;
   font-size: 2.25rem;
   line-height: 1.25em;
+  margin: 0;
 }
 
 p {
   font-family: 'DM Serif Display', serif;
+  margin: 0;
 }

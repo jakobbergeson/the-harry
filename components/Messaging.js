@@ -1,50 +1,73 @@
 import Box from "./animations/Box";
 import Image from "next/image";
+
 import style from '@/styles/Messaging.module.css';
-import { findByTitle } from "@testing-library/react";
 
 export default function Messaging({
   title,
+  image,
+  alt,
   paragraph,
+  children,
   styleWrap,
   styleMc,
   styleP,
   ...props
 }) {
   return (
-    <div
-      style={styles.wrapper}
+    <Box
+      style={styleWrap ? styleWrap : styles.wrapper}
     >
-      <Box
-        style={styles.messagingContent}
+      <div
+        style={styleMc ? styleMc : styles.messagingContent}
       >
         <h2>{title}</h2>
         <p
-          style={styles.messagingContentP}
+          style={styleP ? styleP : styles.messagingContentP}
         >
           {paragraph}
         </p>
-      </Box>
-    </div>
+        <div
+          style={styles.children}
+        >
+          {children}
+        </div>
+      </div>
+      <div
+        style={styles.messagingImage}
+      >
+        <Image
+          src={image}
+          alt={alt}
+        />
+      </div>
+    </Box>
   );
 }
 
 const styles = {
   wrapper: {
     maxWidth: '80rem',
-    position: 'relative',
     margin: '0 auto',
     padding: '1.5rem 0',
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr'
   },
   messagingContent: {
     padding: '2rem',
     backgroundColor: '#f7efe6',
-    right: 'auto',
-    top: '50%',
-    width: 'calc(50% - 1.5rem)',
+    height: 'max-content',
+    width: 'calc(100% + 1.5rem)',
     zIndex: '2',
+    margin: 'auto',
   },
   messagingContentP: {
     padding: '1rem 0 0.5rem',
+  },
+  messagingImage: {
+    marginLeft: '-1.5rem',
+  },
+  children: {
+    paddingTop: '1rem'
   }
 };

@@ -1,7 +1,7 @@
 .container {
   color: var(--colors-accent);
   border-style: solid;
-  border-width: 8px;
+  border-width: 7px;
   border-image: url('../public/border-button-s-w.png') 5% 10% fill repeat;
   line-height: 2rem;
   padding: 0 1rem;
@@ -21,7 +21,7 @@
 .containerBg {
   color: var(--colors-accent);
   border-style: solid;
-  border-width: 8px;
+  border-width: 7px;
   border-image: url('../public/border-button-g.png') 5% 10% fill repeat;
   line-height: 2rem;
   padding: 0 1rem;
