@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from '@/styles/NavButton.module.css';
+import styles from '../styles/NavButton.module.css';
 
 export default function NavButton({ bg, to, children }) {
 

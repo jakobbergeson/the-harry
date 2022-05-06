@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '@/styles/Navbar.module.css';
+import styles from '../styles/Navbar.module.css';
 import { useState, useEffect } from 'react';
 import NavButton from './NavButton';
 
@@ -30,7 +30,7 @@ export default function Navbar() {
           <ul className={styles.uNav}>
             <div className={bg ? styles.logoBg : styles.logo}>
               <Link href='/' >
-                <a><Image src="/the-harry.png" alt="The Harry" width={250} height={65} /></a>
+                <a><Image src="/qt-logo-w.png" alt="Queenstown Public House" width={250} height={65} /></a>
               </Link>
             </div>
             <li><Link href='/'><a>HOME</a></Link></li>

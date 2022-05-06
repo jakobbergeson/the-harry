@@ -77,7 +77,7 @@
 }
 
 .logo {
-  filter: invert(1);
+  filter: invert(0);
 }
 
 .logo a{
@@ -85,7 +85,7 @@
 }
 
 .logoBg {
-  filter: invert(0);
+  filter: invert(1);
 }
 
 .logoBg a{
