@@ -7,7 +7,7 @@ import FoodPic from '../public/qt-food-2.png';
 import Button from '../components/Button';
 import Info from '../components/Info';
 
-import styles from '@/pages/index.module.css';
+import styles from './index.module.css';
 
 export default function Home() {
 
