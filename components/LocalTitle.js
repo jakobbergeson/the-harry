@@ -1,4 +1,4 @@
-import styles from '@/styles/LocalTitle.module.css';
+import styles from '../styles/LocalTitle.module.css';
 
 export default function LocalTitle({ children }) {
   return (

@@ -1,0 +1,21 @@
+.container {
+  overflow: hidden;
+}
+
+.title {
+  margin-top: 1.25rem;
+}
+
+.list {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.listItem {
+  min-width: calc(2.5rem + ((100% - 17.5rem)/15*3));
+  margin: 0.85rem 1rem 0 0;
+  line-height: 1.25em;
+  font-size: 1rem;
+}
