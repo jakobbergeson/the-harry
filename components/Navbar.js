@@ -36,7 +36,13 @@ export default function Navbar() {
             <li><Link href='/'><a>HOME</a></Link></li>
             <li><Link href='/'><a>MENUS</a></Link></li>
             <li><Link href='/'><a>GIFT CARDS</a></Link></li>
-            <li><Link href='/'><a>CAREERS</a></Link></li>
+            <li>
+              <Link
+                href='https://nz-eats.com/careers/'
+              >
+                <a>CAREERS</a>
+              </Link>
+            </li>
             <NavButton bg={bg} to='/'>RESERVATIONS</NavButton>
             <NavButton bg={bg} to='/'>ORDER ONLINE</NavButton>
           </ul>

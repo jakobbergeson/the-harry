@@ -1,5 +1,5 @@
 import styles from '../styles/Header.module.css';
-import { motion, useViewportScroll, useTransform, animate } from 'framer-motion';
+import { motion, useViewportScroll, useTransform } from 'framer-motion';
 
 export default function Header() {
 

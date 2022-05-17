@@ -1,0 +1,45 @@
+.wrapper {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.content {
+  z-index: 2;
+  background: var(--colors-secondary);
+  height: max-content;
+  padding: 2rem;
+  margin: auto 0 auto -3rem;
+  width: calc(100% + 3rem);
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.address {
+  background-position: 0 0;
+  background-size: 1.4rem;
+  line-height: 1.325em;
+  background-image: url(../public/icons8-google-maps-64.png);
+  background-repeat: no-repeat;
+  padding: 0 0 0 2rem;
+  margin-bottom: 1rem;
+  font-family: 'DM Serif Display', serif;
+}
+
+.phone {
+  background-position: 0 0;
+  background-size: 1.25rem;
+  line-height: 1.325em;
+  background-image: url(../public/android_dialer_blue.png);
+  background-repeat: no-repeat;
+  padding: 0 0 0 2rem;
+  font-family: 'DM Serif Display', serif;
+}
+
+.buttons {
+  padding-top: 1rem;
+}

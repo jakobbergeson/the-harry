@@ -1,8 +1,6 @@
 import Box from "./animations/Box";
 import Image from "next/image";
 
-import style from '@/styles/Messaging.module.css';
-
 export default function Messaging({
   title,
   image,
