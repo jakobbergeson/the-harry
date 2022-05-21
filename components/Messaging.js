@@ -64,6 +64,8 @@ const styles = {
   },
   messagingImage: {
     marginLeft: '-1.5rem',
+    maxHeight: '430px',
+    overflow: 'hidden',
   },
   children: {
     paddingTop: '1rem'

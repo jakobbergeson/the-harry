@@ -6,6 +6,7 @@ import Messaging from '../components/Messaging';
 import FoodPic from '../public/qt-food-2.png';
 import Button from '../components/Button';
 import Info from '../components/Info';
+import ImageBar from '../components/ImageBar';
 
 import styles from './index.module.css';
 
@@ -44,6 +45,7 @@ export default function Home() {
           phone={'619-546-0444'}
           info={info}
         />
+        <ImageBar />
       </main>
       <footer className={styles.footer}>
         <a

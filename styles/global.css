@@ -90,3 +90,27 @@ p {
   font-family: 'DM Serif Display', serif;
   margin: 0;
 }
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  max-height: 600px;
+  max-width: 450px;
+  max-width: fit-content;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  max-height: 600px;
+  width: fit-content
+}
+.twoRow {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.twoRow img {
+  height: auto;
+  max-height: 290px;
+}
