@@ -19,3 +19,25 @@
   border-image: url('../public/border-button-g.png') 5% 10% fill repeat;
   transition: color .25s ease, border-image .25s ease;
 }
+
+.containerSecondary {
+  color: var(--colors-primary);
+  border-style: solid;
+  border-width: 8px;
+  border-image: url('../public/border-button-w.png') 5% 10% fill repeat;
+  line-height: 2rem;
+  padding: 0 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  width:auto;
+  transition: color .25s ease, border-image .25s ease;
+}
+
+.containerSecondary:hover {
+  color: var(--colors-accent);
+  border-image: url('../public/border-button-s-w.png') 5% 10% fill repeat;
+  transition: color .25s ease, border-image .25s ease;
+}
