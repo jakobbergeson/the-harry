@@ -6,9 +6,6 @@ import { Autoplay, FreeMode } from "swiper";
 
 import styles from '../styles/Swiper.module.css';
 
-import FoodPic from '../public/q-food-squ.jpeg';
-import LogoPic from '../public/border-button-s-g.png';
-
 export default function ImageBar() {
 
   return (

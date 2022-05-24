@@ -10,8 +10,11 @@ export default function Messaging({
   styleWrap,
   styleMc,
   styleP,
+  styleImWrap,
   ...props
 }) {
+
+
   return (
     <Box
       style={styleWrap ? styleWrap : styles.wrapper}
@@ -32,11 +35,14 @@ export default function Messaging({
         </div>
       </div>
       <div
-        style={styles.messagingImage}
+        style={styleImWrap ? styleImWrap : styles.imageWrapper}
       >
         <Image
           src={image}
           alt={alt}
+          width={800}
+          height={600}
+          style={styles.image}
         />
       </div>
     </Box>
@@ -49,7 +55,7 @@ const styles = {
     margin: '0 auto',
     padding: '1.5rem 0',
     display: 'grid',
-    gridTemplateColumns: '1fr 1fr'
+    gridTemplateColumns: '1fr 1fr',
   },
   messagingContent: {
     padding: '2rem',
@@ -58,11 +64,12 @@ const styles = {
     width: 'calc(100% + 1.5rem)',
     zIndex: '2',
     margin: 'auto',
+    textAlign: 'left'
   },
   messagingContentP: {
     padding: '1rem 0 0.5rem',
   },
-  messagingImage: {
+  imageWrapper: {
     marginLeft: '-1.5rem',
     maxHeight: '430px',
     overflow: 'hidden',
