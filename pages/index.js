@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Header from '../components/Header';
 import LocalTitle from '../components/LocalTitle';
 import Messaging from '../components/Messaging';
-import FoodPic from '../public/qt-food-2.png';
 import Button from '../components/Button';
 import Info from '../components/Info';
 import ImageBar from '../components/ImageBar';
@@ -28,7 +27,7 @@ export default function Home() {
         <Messaging
           title='OUR MENU'
           paragraph={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore numquam sint incidunt enim! Voluptates sit tenetur dignissimos, a quo ipsa ab modi quos voluptatum pariatur? Autem maiores magnam sequi exercitationem. Lorem ipsum dolor, sit amet consectetur adipisicing elit.'}
-          image={FoodPic}
+          image={'https://i.imgur.com/Bevsoi8.jpg'}
           alt={'Food'}
         >
           <Button to='/'>
@@ -46,6 +45,34 @@ export default function Home() {
           info={info}
         />
         <ImageBar />
+        <Messaging
+          title='Host your event at Queenstown'
+          paragraph={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore numquam sint incidunt enim! Voluptates sit tenetur dignissimos, a quo ipsa ab modi quos voluptatum pariatur? Autem maiores magnam sequi exercitationem. Lorem ipsum dolor, sit amet consectetur adipisicing elit.'}
+          image={'https://i.imgur.com/wKOtBk8.jpg'}
+          alt={'Food'}
+          styleImWrap={{
+            marginRight: '-1.5rem',
+            maxHeight: '430px',
+            overflow: 'hidden',
+            gridColumnStart: 1,
+            gridRow: 1,
+          }}
+          styleMc={{
+            padding: '2rem',
+            backgroundColor: '#f7efe6',
+            height: 'max-content',
+            width: 'calc(100% + 1.5rem)',
+            zIndex: '2',
+            margin: 'auto 0 auto -1.5rem',
+            textAlign: 'left',
+            gridColumnStart: 2,
+            gridRow: 1,
+          }}
+        >
+          <Button to='/'>
+            Learn More
+          </Button>
+        </Messaging>
       </main>
       <footer className={styles.footer}>
         <a
