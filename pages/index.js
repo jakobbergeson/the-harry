@@ -73,6 +73,22 @@ export default function Home() {
             Learn More
           </Button>
         </Messaging>
+        <div className={styles.bottomContentWrap}>
+          <div className={styles.bottomContentContainer}>
+            <div className={styles.bottomContentOverlay}>
+              <div className={styles.bottomContentContent}>
+                <h2>Make today a Queenstown day</h2>
+                <h3>Reserve your table now</h3>
+                <Button
+                  to='/'
+                  secondary={true}
+                >
+                  Reserve Now
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <footer className={styles.footer}>
         <a

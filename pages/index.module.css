@@ -6,3 +6,41 @@
   justify-content: center;
   align-items: center;
 }
+
+.bottomContentWrap {
+  padding: 1.5rem 0px;
+  width: 100%;
+}
+
+.bottomContentContainer {
+  background-image: url('https://i.imgur.com/gQo8sVo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 45%;
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+
+.bottomContentOverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.55);
+}
+
+.bottomContentContent {
+  position: absolute;
+  top: 50%;
+  left: 10.75%;
+  color: var(--colors-primary);
+  transform: translateY(-50%);
+}
+
+.bottomContentContent h2{
+  padding-bottom: 1rem;
+}
+
+.bottomContentContent h3{
+  padding-bottom: 1rem;
+  font-weight: 400;
+}
