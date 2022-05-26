@@ -18,7 +18,7 @@ export default function Home() {
 
       <Head>
         <title>Queenstown Public House</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/q-favicon.png" />
       </Head>
 
       <main>
