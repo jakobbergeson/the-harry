@@ -3,8 +3,8 @@
 :root {
   --colors-primary: #fff;
   --colors-secondary: #f7efe6;
+  --colors-text: #5B5C2E;
   --colors-accent: #937338;
-  --colors-text: #40476d;
 }
 
 html,
