@@ -1,6 +1,6 @@
 .navContainer {
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.55),transparent);
+  background-image: linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.50), transparent);
   background-color: transparent;
   color: var(--colors-primary);
   position: fixed;
@@ -44,12 +44,12 @@
   border: 0;
   border-top: 1px solid var(--colors-text);
   height: 1px;
-  margin: 0;
+  margin: 0px 5px;
 }
 
 .navSeperator::before {
   background-position: center left;
-  background-image: url('../public/diamond-l.svg');
+  background-image: url('../public/q-ornament-l.png');
   background-repeat: no-repeat;
   background-size: 100% auto;
   content: '';
@@ -57,13 +57,13 @@
   height: 100%;
   position: absolute;
   top: 0;
-  width: 1.2rem;
+  width: 1.8rem;
   padding-top: 1rem;
 }
 
 .navSeperator::after {
   background-position: center right;
-  background-image: url('../public/diamond-r.svg');
+  background-image: url('../public/q-ornament-r.png');
   background-repeat: no-repeat;
   background-size: 100% auto;
   content: '';
@@ -72,7 +72,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 1.2rem;
+  width: 1.8rem;
   padding-top: 1rem;
 }
 
