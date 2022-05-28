@@ -1,39 +1,39 @@
 .container {
   color: var(--colors-accent);
-  border-style: solid;
-  border-width: 7px;
-  border-image: url('../public/border-button-s-w.png') 5% 10% fill repeat;
+  background-image: url("../public/menu-border-w-s.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   line-height: 2rem;
-  padding: 0 1rem;
+  padding: .7rem 1.1rem;
   text-align: center;
   font-size: 16px;
   text-transform: uppercase;
   width:auto;
-  transition: color .25s ease, border-image .25s ease;
+  transition: color .25s ease, background-image .25s ease;
 }
 
 .container:hover {
   color: #fff;
-  border-image: url('../public/border-button-w.png') 5% 10% fill repeat;
-  transition: color .25s ease, border-image .25s ease;
+  background-image: url('../public/menu-border-w.png');
+  transition: color .25s ease, background-image .25s ease;
 }
 
 .containerBg {
   color: var(--colors-accent);
-  border-style: solid;
-  border-width: 7px;
-  border-image: url('../public/border-button-g.png') 5% 10% fill repeat;
+  background-image: url("../public/menu-border-g.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   line-height: 2rem;
-  padding: 0 1rem;
+  padding: .7rem 1.1rem;
   text-align: center;
   font-size: 16px;
   text-transform: uppercase;
   width:auto;
-  transition: color .25s ease, border-image .25s ease;
+  transition: color .25s ease, background-image .25s ease;
 }
 
 .containerBg:hover {
   color: #fff;
-  border-image: url('../public/border-button-s-g.png') 5% 10% fill repeat;
-  transition: color .25s ease, border-image .25s ease;
+  background-image: url('../public/menu-border-g-s.png');
+  transition: color .25s ease, background-image .25s ease;
 }

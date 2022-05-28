@@ -81,14 +81,14 @@
 }
 
 .logo a{
- padding-left: 0;
+  padding-left: 0;
 }
 
 .logoBg {
   filter: invert(1);
 }
 
-.logoBg a{
+.logoBg a {
   padding-left: 0;
  }
 
@@ -97,7 +97,7 @@
   margin: 0;
   padding: 1rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   height: 100%;
 }
