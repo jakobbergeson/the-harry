@@ -44,3 +44,115 @@
   padding-bottom: 1rem;
   font-weight: 400;
 }
+
+.footerWrapper {
+  margin-top: 1.25rem;
+  background-color: var(--colors-text);
+  width: 100vw;
+  padding: 3rem 0rem 1rem 0rem;
+}
+
+.footerContainer {
+display: grid;
+grid-template-columns: 1fr 2fr 1fr;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:100%;
+}
+
+.footerNavList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--colors-primary);
+  font-size: 16px;
+}
+
+.footerNavList li {
+  cursor: pointer;
+  transition: color .5s ease;
+}
+
+.footerNavList li:hover {
+  color:var(--colors-accent);
+  transition: color .5s ease;
+
+}
+
+.navSeperator {
+  padding-top: 1rem;
+  position: relative;
+}
+
+.navSeperator hr{
+  border: 0;
+  border-top: 1px solid var(--colors-primary);
+  height: 1px;
+  margin: 0px 5px;
+}
+
+.navSeperator::before {
+  background-position: center left;
+  background-image: url('../public/q-ornament-w-l.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 1.8rem;
+  padding-top: 1rem;
+}
+
+.navSeperator::after {
+  background-position: center right;
+  background-image: url('../public/q-ornament-w-r.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.8rem;
+  padding-top: 1rem;
+}
+
+.socialContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialContainer a {
+  margin: 0 2rem;
+  padding: .75rem;
+  border-radius: 5px;
+  transition: background-color .5s ease;
+}
+
+.socialContainer a:hover {
+  background-color: var(--colors-accent);
+  transition: background-color .5s ease;
+}
+
+.bottomBanner {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  color: var(--colors-primary)
+}
