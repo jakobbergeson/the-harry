@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import Header from '../components/Header';
 import LocalTitle from '../components/LocalTitle';
 import Messaging from '../components/Messaging';
@@ -90,17 +91,32 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+      <footer className={styles.footerWrapper}>
+        <div className={styles.footerContainer}>
+          <div className={styles.logoContainer}>
+            <Link href='/' >
+              <a><Image src="/qt-logo-w.png" alt="Queenstown Public House" width={200} height={55} /></a>
+            </Link>
+          </div>
+          <div className={styles.footerNav}>
+            <ul className={styles.footerNavList}>
+              <li>Menus</li>
+              <li>About Us</li>
+              <li>Reservations</li>
+              <li>Order Online</li>
+            </ul>
+            <div className={styles.navSeperator}><hr /></div>
+          </div>
+          <div className={styles.socialContainer}>
+            <Link href='/' >
+              <a><Image src="/facebook-square-brands-w.png" alt="Facebook" width={35} height={40} /></a>
+            </Link>
+            <Link href='/' >
+              <a><Image src="/instagram-brands-w.png" alt="Instagram" width={35} height={40} /></a>
+            </Link>
+          </div>
+        </div>
+        <div className={styles.bottomBanner}>© Queenstown Public House 2022</div>
       </footer>
     </div>
   );
