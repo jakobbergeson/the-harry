@@ -24,7 +24,7 @@ export default function Home() {
 
       <main>
         <Header />
-        <LocalTitle>QUEENSTOWN IN LITTLE ITALY</LocalTitle>
+        <LocalTitle>QUEENSTOWN PUBLIC HOUSE</LocalTitle>
         <Messaging
           title='OUR MENU'
           paragraph={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore numquam sint incidunt enim! Voluptates sit tenetur dignissimos, a quo ipsa ab modi quos voluptatum pariatur? Autem maiores magnam sequi exercitationem. Lorem ipsum dolor, sit amet consectetur adipisicing elit.'}
