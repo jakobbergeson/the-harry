@@ -33,6 +33,7 @@ export default function Info({
           <a
             href={addressLink}
             target='_blank'
+            rel="noreferrer"
           >
             {address}
           </a>
