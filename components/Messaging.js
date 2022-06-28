@@ -13,7 +13,7 @@ export default function Messaging({
   styleImWrap,
   ...props
 }) {
-
+  console.log(image);
 
   return (
     <Box
